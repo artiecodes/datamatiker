@@ -38,6 +38,31 @@ void MethodTwo()
   int weekDay = 0; // 0 = Monday, 6 = Sunday. 
   boolean weekEnd = false;
   
+  switch(weekDay) {
+  case 0:
+    println("It's Monday!");
+    break; 
+  case 1:
+    println("It's Tuesday!");
+    break;
+  case 2:
+    println("It's Wednesday!");
+    break;
+  case 3:
+    println("It's Thursday!");
+    break;
+  case 4:
+    println("It's Friday!");
+    break;
+  case 5:
+    println("It's Saturday!");
+    break;
+  case 6:
+    println("It's Sunday!");
+    break;
+    
+}
+  
   if (weekDay < 5)
   {
     weekEnd = false;
@@ -46,12 +71,6 @@ void MethodTwo()
   {
     weekEnd = true;
   }
-  
-  // Print the name of the weekday here: 
-  
-  println(weekDay);
-    
-  // Print if it is weekend here:
   
   if (weekEnd) {
     println("It's weekend! :D");
