@@ -6,7 +6,6 @@ void setup() {
   int i = 0;
   for(int x = 0; x < board.length; x++) {
     for(int y = 0; y < board[x].length; y++) {
-      
       board[x][y] = i % 2;
       i++;
     }
@@ -24,8 +23,7 @@ void draw() {
       else {
         fill(0);
       }
-      rect(x * sideLength, y * sideLength, sideLength, sideLength);
+      rect(x*sideLength, y*sideLength, sideLength, sideLength);
     }
   }
-
 }
