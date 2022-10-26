@@ -20,8 +20,9 @@ public class ElectricCar extends ACar {
     }
 
     public double getWhPrKm() {
-        return kmPrLitre;
-        //167wh/km
+        return (batteryCapacity/91.25) * 100;
+        // (167/91,25) = 1.83
+        // 100/1.83 = 54.6
     }
 
     @Override

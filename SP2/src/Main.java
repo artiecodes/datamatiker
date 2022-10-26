@@ -3,6 +3,8 @@ public class Main {
         //ACar electricCar = new ElectricCar("AY69368", "Tesla", "Model 3", 4, 75, 600, 54.6);
         //AFuelCar gasolineCar = new GasolineCar("AR47486","Skoda","Fabia", 4, "gasoline", 20.8);
         //AFuelCar dieselCar = new DieselCar("CD71332", "Audi","A4",4, true, "diesel", 29.07);
+        //Checker
+        //ElectricCar elCar = new ElectricCar("618676", "check", "2", 4, 160,600,60);
 
         FleetOfCars fleet = new FleetOfCars();
 
@@ -10,9 +12,10 @@ public class Main {
         fleet.addCar(fleet.gasolineCar);
         fleet.addCar(fleet.dieselCar);
 
+        //System.out.println(elCar.getWhPrKm());
+
         System.out.println(fleet.toString());
         System.out.println(fleet.getTotalRegistrationFeeForFleet());
-
 
 
     }
