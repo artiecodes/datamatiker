@@ -44,6 +44,6 @@ public class ElectricCar extends ACar {
     @Override
     public String toString() {
         return super.toString() + "It has a battery capacity of " + batteryCapacity + "kWh and a max range of " + maxRange + "km" +
-                " and a relative consumption of " + kmPrLitre + " kilometers per litre." + "\n";
+                " and a relative consumption of " + kmPrLitre + " kilometers per litre.";
     }
 }

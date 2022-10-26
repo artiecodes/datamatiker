@@ -22,6 +22,6 @@ public class GasolineCar extends AFuelCar {
 
     @Override
     public String toString() {
-        return super.toString() + "\n";
+        return super.toString();
     }
 }
