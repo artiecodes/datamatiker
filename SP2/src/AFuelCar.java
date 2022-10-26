@@ -17,7 +17,6 @@ public abstract class AFuelCar extends ACar {
 
     @Override
     public String toString() {
-        return "The car with registration " + registrationNumber + " is a " + fuelType + " driven " + make + " " + model + " with " +
-                numberOfDoors + " doors.";
+        return super.toString() + "KM/Litre: " + kmPrLitre + ", Fueltype: " + fuelType + ". ";
     }
 }

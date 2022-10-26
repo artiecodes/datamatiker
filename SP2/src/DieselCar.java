@@ -13,7 +13,7 @@ public class DieselCar extends AFuelCar {
     @Override
     public int getRegistrationFee() {
         int price = 0;
-        if (kmPrLitre >= 20 && kmPrLitre <= 50) {
+        if (kmPrLitre >= 20 && kmPrLitre < 50) {
             price = 330 + 130;
         } else if (kmPrLitre >= 15 && kmPrLitre < 20) {
             price = 1050 + 1390;
@@ -21,17 +21,17 @@ public class DieselCar extends AFuelCar {
             price = 2340 + 1850;
         } else if (kmPrLitre >= 5 && kmPrLitre < 10) {
             price = 5500 + 2770;
-        } else if (kmPrLitre < 5) {
+        } else {
             price = 10470 + 15260;
         }
-        if (particleFilter) {
-            return price;
-        } else return price + 1000;
+        if (!particleFilter) {
+            return price + 1000;
+        }
+        return price;
     }
 
     @Override
     public String toString() {
-        return "The car with registration " + registrationNumber + " is a " + fuelType + " driven " + make + " " + model + " with " +
-                numberOfDoors + " doors. It is " + particleFilter + " that it has a particle filter.";
+        return super.toString() + " It is " + particleFilter + " that it has a particle filter.";
     }
 }

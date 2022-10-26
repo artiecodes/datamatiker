@@ -22,7 +22,6 @@ public class GasolineCar extends AFuelCar {
 
     @Override
     public String toString() {
-        return "The car with registration " + registrationNumber + " is a " + fuelType + " driven " + make + " " + model + " with " +
-                numberOfDoors + " doors.";
+        return super.toString() + "\n";
     }
 }

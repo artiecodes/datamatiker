@@ -32,6 +32,6 @@ public abstract class ACar implements ICar {
     @Override
     public String toString() {
         return "The car with registration " + registrationNumber + " is a " + make + " " + model + " with " +
-                numberOfDoors + " doors.";
+                numberOfDoors + " doors. ";
     }
 }

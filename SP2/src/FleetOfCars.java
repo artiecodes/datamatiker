@@ -20,7 +20,7 @@ public class FleetOfCars {
     public String toString() {
         String cars = "";
         for (ACar carList : fleet) {
-            cars += carList.toString() + "\n";
+            cars += carList.toString();
         }
         return cars;
     }
